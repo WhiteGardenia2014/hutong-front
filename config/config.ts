@@ -270,12 +270,14 @@ export default defineConfig({
           icon: 'smile',
           path: '/account/center',
           component: './account/center',
+          menuRender: false,
         },
         {
           name: 'settings',
           icon: 'smile',
           path: '/account/settings',
           component: './account/settings',
+          menuRender: false,
         },
       ],
     },
@@ -310,7 +312,13 @@ export default defineConfig({
     },
     {
       path: '/',
-      redirect: '/dashboard/analysis',
+      redirect: '/main',
+    },
+    {
+      path: '/main',
+      component: './main',
+      menuRender: false,
+      footerRender: false,
     },
     {
       component: '404',

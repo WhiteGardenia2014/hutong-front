@@ -270,7 +270,6 @@ export default defineConfig({
           icon: 'smile',
           path: '/account/center',
           component: './account/center',
-          menuRender: false,
         },
         {
           name: 'settings',
@@ -278,7 +277,14 @@ export default defineConfig({
           path: '/account/settings',
           component: './account/settings',
           menuRender: false,
+          footerRender: false,
         },
+        {
+          path: '/account/modify',
+          component: './account/modify',
+          menuRender: false,
+          footerRender: false,
+        }
       ],
     },
     {

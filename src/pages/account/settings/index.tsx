@@ -86,7 +86,7 @@ const Settings: React.FC = () => {
           }
         }}
       >
-        <div className={styles.leftMenu}>
+        {/* <div className={styles.leftMenu}>
           <Menu
             mode={initConfig.mode}
             selectedKeys={[initConfig.selectKey]}
@@ -99,7 +99,7 @@ const Settings: React.FC = () => {
           >
             {getMenu()}
           </Menu>
-        </div>
+        </div> */}
         <div className={styles.right}>
           <div className={styles.title}>{menuMap[initConfig.selectKey]}</div>
           {renderChildren()}
